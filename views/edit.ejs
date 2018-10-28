@@ -1,0 +1,44 @@
+<% include partials/_header %>
+
+<div class="container">
+  <div class="row">
+    <!--FORM-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card">
+        <h3 align=center>Edit Sudent Details</h3>
+        <div class="card-body">
+          <form action="/edit/<%= task._id %>" method="post">
+            <a href="">First Name</a>
+            <div class="form-group">
+              <input class="form-control" type="text" name="sfname" placeholder="First Name" value="<%= task.sfname %>">
+            </div>
+            <a href="">Last Name</a>
+            <div class="form-group">
+                <input class="form-control" type="text" name="slname" placeholder="Last Name" value="<%= task.slname %>">
+              </div>
+            <a href="">Course</a>
+            <div class="form-group">
+                <div class="form-group">
+                    <select class="form-control" name="sclass">
+                      <option value="Computer Science">Computer Science</option>
+                      <option value="Zoology">Zoology</option>
+                      <option value="Economics">Economics</option>
+                      <option value="Psychology">Psychology</option>
+                    </select>
+                  </div>
+                  <a href="">Address</a>
+              <textarea class="form-control" name="saddr" cols="80"
+                placeholder="Add a Description"
+                ><%= task.saddr %></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Update 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/_footer%>

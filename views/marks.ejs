@@ -1,0 +1,105 @@
+<% include partials/_header %>
+	<body>
+            <form role="form" method="post" action="/mark/<%= task._id %>">
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ 					
+						<fieldset>							
+							<p class="text-uppercase pull-center"> Semester 1</p>	
+ 							<div class="form-group">
+								<input type="number" name="sem1as" class="form-control input-lg" placeholder="S1 Assignment Score" min="1" max="5" value="<%= task.sem1as %>">
+							</div>
+
+							<div class="form-group">
+								<input type="number" name="sem1se" class="form-control input-lg" placeholder="S1 Seminar Score" min="1" max="5" value="<%= task.sem1se %>">
+							</div>
+							<div class="form-group">
+								<input type="number" name="sem1mt" class="form-control input-lg" placeholder="S1 Assessment Score" min="1" max="5" value="<%= task.sem1mt %>">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="sem1ex" class="form-control input-lg" placeholder="S1 Exam Score" min="1" max="5" value="<%= task.sem1ex %>">
+                            </div>
+
+                        </fieldset>
+  
+                        <hr>
+                        <fieldset>							
+							<p class="text-uppercase pull-center"> Semester 3</p>	
+                            <div class="form-group">
+                                    <input type="number" name="sem2as" class="form-control input-lg" placeholder="S3 Assignment Score" min="1" max="5" value="<%= task.sem2as %>">
+                                </div>
+    
+                                <div class="form-group">
+                                    <input type="number" name="sem2se" class="form-control input-lg" placeholder="S3 Seminar Score" min="1" max="5" value="<%= task.sem2se %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem2mt" class="form-control input-lg" placeholder="S3 Assessment Score" min="1" max="5" value="<%= task.sem2mt %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem2ex" class="form-control input-lg" placeholder="S3 Exam Score" min="1" max="5" value="<%= task.sem2ex %>">
+                                </div>
+
+						</fieldset>
+
+				</div>
+				
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+				
+				<div class="col-md-5">
+
+						<fieldset>							
+							<p class="text-uppercase">Semester 2</p>	
+ 								
+                            <div class="form-group">
+                                    <input type="number" name="sem3as" class="form-control input-lg" placeholder="S2 Assignment Score" min="1" max="5" value="<%= task.sem3as %>">
+                                </div>
+    
+                                <div class="form-group">
+                                    <input type="number" name="sem3se" class="form-control input-lg" placeholder="S2 Seminar Score" min="1" max="5" value="<%= task.sem3se %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem3mt" class="form-control input-lg" placeholder="S2 Assessment Score" min="1" max="5" value="<%= task.sem3mt %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem3ex" class="form-control input-lg" placeholder="S2 Exam Score" min="1" max="5" value="<%= task.sem3ex %>">
+                                </div>
+								 
+                         </fieldset>
+                         <hr>
+                         <fieldset>							
+							<p class="text-uppercase pull-center"> Semester 4</p>	
+                            <div class="form-group">
+                                    <input type="number" name="sem4as" class="form-control input-lg" placeholder="S4 Assignment Score" min="1" max="5" value="<%= task.sem4as %>">
+                                </div>
+    
+                                <div class="form-group">
+                                    <input type="number" name="sem4se" class="form-control input-lg" placeholder="S4 Seminar Score" min="1" max="5" value="<%= task.sem4se %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem4mt" class="form-control input-lg" placeholder="S4 Assessment Score" min="1" max="5" value="<%= task.sem4mt %>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="sem4ex" class="form-control input-lg" placeholder="S4 Exam Score" min="1" max="5" value="<%= task.sem4ex %>">
+                                </div>
+
+                        </div>
+				
+				</div>
+            </div>
+            <div>
+                <div align="center">
+                    <input type="submit"  class="btn btn-lg btn-primary"   value="Update Score" >
+                </div>
+      </div>
+		</div>
+    </div>
+</form>	
+	</body>
+	 
+
+</html>
